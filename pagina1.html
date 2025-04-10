@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Fragoso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Eduardo Fragoso</h1>
+        <p>Estudiante de Sistemas Computacionales | Emprendedor | Música | Duro</p>
+    </header>
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+        <li><a href="index.php">Volver a CARMEX</a></li>
+    </nav>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="about-container">
+            <p>Me gusta la tecnologia, hacer ejercicio, me gusta hacer musica, y me gusta crear negocios.</p>
+            <img src="images/perfil.jpg" alt="Foto de Eduardo Fragoso" class="profile-pic">
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <p>Estoy trabajando en varios proyectos, entre ellos esta el desarrollo de software, reparacion de hardware y software, y un emprendimiento de publicidad.</p>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Contactate conmigo por medio de redes sociales:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lalo_mf_?igsh=MXRob294Nzk4MnliZw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/1BDDrD9k9H/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Eduardo Fragoso. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #333;
+        text-align: center;
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: #808080;
+        color: white;
+        padding: 50px 20px;
+        font-size: 1.2em;
+        animation: fadeIn 2s ease-in-out;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #1a1a1a;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #f0f8ff;
+        text-decoration: underline;
+    }
+    section {
+        max-width: 800px;
+        margin: 80px auto 40px;
+        padding: 20px;
+    }
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: transform 0.3s;
+    }
+    .profile-pic:hover {
+        transform: scale(1.1);
+    }
+    .social-icons a {
+        display: inline-block;
+        margin: 10px;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #007acc;
+        transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+        transform: scale(1.1);
+        color: #005f99;
+    }
+    footer {
+        background-color: #808080;
+        color: white;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+        nav a {
+            display: block;
+            margin: 10px 0;
+        }
+        section {
+            padding: 10px;
+        }
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .profile-pic {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+</style>

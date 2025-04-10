@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    
+<style>
+        .login-wrapper {
+            max-width: 500px;
+            margin: 5% auto;
+            background: rgba(31, 31, 31, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+        .login-wrapper h2 {
+            margin-bottom: 1rem;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 0.5rem;
+            text-align: left;
+            color: #fff;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 1rem;
+            background: #2e2e2e;
+            color: #fff;
+        }
+
+        .actions input[type="submit"] {
+            background-color: #d10000;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .actions input[type="submit"]:hover {
+            background-color: #ff1e1e;
+        }
+
+        #error-message {
+            background: #ff4d4d;
+            color: white;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<?php include 'php/header.php'; ?>
+
+<section class="login-wrapper">
+    <div class="inner">
+        <h2 class="major">Inicia sesión en CARMEX</h2>
+        <!-- Contenedor para mensajes de error -->
+        <div id="error-message" style="color:red; margin-bottom:1em;"></div>
+        <form id="loginForm" method="post" action="PHP_FUN/Login.php">
+            <div class="fields">
+                <div class="field">
+                    <label for="Email">Correo</label>
+                    <input type="email" name="Email" id="Email" required />
+                </div>
+                <div class="field">
+                    <label for="Passwor">Contraseña</label>
+                    <input type="password" name="Passwor" id="Passwor" required />
+                </div>
+            </div>
+            <ul class="actions">
+         
+                    <input type="submit" value="Iniciar Sesión" /><br><br>
+      
+                 <a href="Registro.php" style="color:white; decoration:none;" class="acciones__enlace">¿Aún no tienes una cuenta? Obtener una</a>
+        
+            </ul>
+        </form>
+    </div>
+</section>
+
+<script>
+$(document).ready(function(){
+    $("#loginForm").on("submit", function(e){
+        e.preventDefault();  // Evita el envío tradicional
+        
+        // Limpiar mensaje de error
+        $("#error-message").hide().html("");
+        
+        // Obtener valores y eliminar espacios en blanco al inicio y final
+        var email = $("#Email").val().trim();
+        var pass = $("#Passwor").val().trim();
+        
+        // Validaciones básicas: no vacíos y formato de email (HTML ya lo valida, pero refuerzo)
+        if(email === "" || pass === ""){
+            $("#error-message").html("Por favor, completa todos los campos.");
+            return;
+        }
+        
+        // Puedes agregar más validaciones, por ejemplo, validación de formato de contraseña
+        
+        // Enviar la solicitud AJAX
+        $.ajax({
+            url: $("#loginForm").attr("action"),
+            type: "POST",
+            data: { Email: email, Passwor: pass },
+            dataType: "json",
+            success: function(response) {
+                if(response.status === "success"){
+                    // Redirigir según el rol (la respuesta incluirá la URL)
+                    window.location.href = response.url;
+                } else {
+                    $("#error-message").html(response.message).fadeIn();
+                }
+            },
+            error: function() {
+                $("#error-message").html("Ocurrió un error en la comunicación con el servidor.");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

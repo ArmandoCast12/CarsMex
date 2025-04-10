@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Personal de Pedro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>¡Hola, soy Pedro!</h1>
+    <p>Ingeniero en Sistemas con pasión por la música, los coches y el sueño de ser piloto.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#sobre-mi">Quien soy</a></li>
+      <li><a href="#pasatiempos">Gustos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="../index.php">Volver a CARMEX</a></li>
+    </ul>
+  </nav>
+
+  <section id="carrusel">
+    <h2><center>Un poco de mi</center></h2>
+    <div class="carousel-container">
+      <input type="radio" name="carousel" id="slide1" checked>
+      <input type="radio" name="carousel" id="slide2">
+      <input type="radio" name="carousel" id="slide3">
+  
+
+      <div class="carousel-slide">
+        <div class="carousel-item">
+          <label for="slide1">
+            <img src="imagen1.jpg" alt="Imagen 1">
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide2">
+            <img src="imagen2.png" alt="Imagen 2">
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide3">
+            <img src="imagen3.jpg" alt="Imagen 3">
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide3">
+            <img src="imagen4.jpg" alt="Imagen 3">
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide3">
+            <img src="imagen5.jpg" alt="Imagen 3">
+          </label>
+        </div>
+        <div class="carousel-item">
+          <label for="slide3">
+            <img src="imagen6.jpg" alt="Imagen 3">
+          </label>
+        </div>
+      </div>
+  
+      <div class="controls">
+        <label for="slide1" class="prev">&#10094;</label>
+        <label for="slide2" class="next">&#10095;</label>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sobre-mi">
+    <h2>Quien soy?</h2>
+    <p>Soy ingeniero en sistemas con una gran afición por los coches y la música. Si no estuviera escribiendo código, estaría volando por los cielos como piloto, un sueño que siempre he tenido.</p>
+  </section>
+
+  <section id="pasatiempos">
+    <h2>Mis Gustos</h2>
+    <div class="hobby">
+      <h3>🎵 Escuchar Música</h3>
+      <p>La música es mi inspiración diaria. Siempre estoy buscando nuevos sonidos para disfrutar mientras trabajo o conduzco.</p>
+    </div>
+    <div class="hobby">
+      <h3>🚗 Coches</h3>
+      <p>Los coches son mi pasión. Me encanta aprender sobre diferentes modelos, tecnologías automotrices y mejorar mis conocimientos sobre el mundo automotriz.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? ¡No dudes en contactarme!</p>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pedro. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+   
+    const saludo = document.querySelector('header h1');
+    const hora = new Date().getHours();
+    if (hora < 12) {
+      saludo.textContent = '¡Buenos días, soy Pedro!';
+    } else if (hora < 18) {
+      saludo.textContent = '¡Buenas tardes, soy Pedro!';
+    } else {
+      saludo.textContent = '¡Buenas noches, soy Pedro!';
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

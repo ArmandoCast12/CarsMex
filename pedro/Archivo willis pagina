@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<! -- <meta charset="UTF-8"> --›
+	‹meta name="vilewport" content="width=device-width, initial-scale=1.0"›
+	<title>Mi Página Personal</title>
+	<link rel="stylesheet href="css/estilobasico01.css"›
+
+</head>
+<body>
+
+	<header>
+		<img src="imgs/naturefrm01.png" alt="Mi Foto" >
+		<h1>Tu Nombre</h1>
+		<p>"La vida es lo que pasa mientras estás ocupado haciendo otros planes." - John Lennon</p>
+	</header>
+
+	<nav>
+		<a href="#seccionl">Inicio</a>
+		<a href="#seccion2">Sobre mi</a>
+		<a href="#seccion฿">Proyectos</a>
+		<a href="#seccion4" >Blog</a>
+		<a href="#seccion5">Contacto</a>
+	</nav>
+
+	< section id="seccion1">
+		<h2>Bienvenido a mi página personal</h2>
+		<p>Aquí podrás conocer más sobre mí y mis proyectos.</p>
+	</section>
+
+	<footer>
+		<p›Contáctame: </p>
+		<p›Email: <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></p>
+		<p›Sígueme en mis redes sociales: </p>
+		<a href-"https: //www.facebook.com/tuperfil" target="_blank">Facebook</a>
+		<a href="https://www.twitter.com/tuperfil" target="_blank">Twitter</a> <a href="https://www.instagram.com/tuperfil" target="_blank">			Instagram</a>
+	</footer>
+
+</body>
+</html>

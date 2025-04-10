@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-pic{
+width: 100px;
+}
+
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #6a0e3a; 
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6a0e3a;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #d7a7c1;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.about-section h2 {
+    font-size: 36px;
+    color: #6a0e3a;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #6a0e3a; 
+}
+
+.photo-section {
+    padding: 40px 0;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6a0e3a; 
+}
+
+
+.social-section {
+    background-color: #f4f4f4; 
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-section h2 {
+    font-size: 36px;
+    color: #6a0e3a; 
+    margin-bottom: 20px;
+}
+
+.social-section ul {
+    list-style: none;
+}
+
+.social-section ul li {
+    margin: 10px 0;
+}
+
+.social-section a {
+    text-decoration: none;
+    color: #6a0e3a; 
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-section a:hover {
+    color: #d7a7c1; 
+}
+
+.contact-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f4f4f4; 
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #6a0e3a; 
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #6a0e3a; 
+}
+
+footer {
+    background-color: #6a0e3a;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Angeles Espiridion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diana Angeles Espiridion</h1>
+    </header>
+
+
+    <section class="container">
+        <div class="profile">
+
+            <img src="Foto.jpg" alt="Foto de Diana" class="profile-pic">
+        </div>
+
+        <div class="social-links">
+            <h2>Conéctate conmigo</h2>
+            <a href="https://www.instagram.com/de_ang07?igsh=MWZ3ZnoxbGhpdm1lYQ%3D%3D&utm_source=qr" target="_blank" class="social-button">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100009275752528&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="social-button">Facebook</a>
+            <a href="dianangeles204@gmail.com" target="_blank" class="social-button">Gmail</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diana Angeles Espiridion</p>
+    </footer>
+</body>
+</html>

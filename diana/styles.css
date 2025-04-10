@@ -1,0 +1,148 @@
+/* Reset global de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-pic{
+width: 100px;
+}
+
+/* Estilo básico del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Blanco */
+    color: #6a0e3a; /* Vino oscuro */
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #ffffff; /* Vino oscuro */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    font-size: 32px;
+    color: #ffffff; /* Blanco */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #6a0e3a; /* Vino oscuro */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #d7a7c1; /* Vino claro */
+}
+
+/* Sección sobre mí */
+.about-section {
+    background-color: #f4f4f4; /* Blanco */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #6a0e3a; /* Vino oscuro */
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #6a0e3a; /* Vino oscuro */
+}
+
+/* Sección de foto */
+.photo-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6a0e3a; /* Vino oscuro */
+}
+
+/* Sección de redes sociales */
+.social-section {
+    background-color: #f4f4f4; /* Blanco */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-section h2 {
+    font-size: 36px;
+    color: #6a0e3a; /* Vino oscuro */
+    margin-bottom: 20px;
+}
+
+.social-section ul {
+    list-style: none;
+}
+
+.social-section ul li {
+    margin: 10px 0;
+}
+
+.social-section a {
+    text-decoration: none;
+    color: #6a0e3a; /* Vino oscuro */
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-section a:hover {
+    color: #d7a7c1; /* Vino claro */
+}
+
+/* Sección de contacto */
+.contact-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f4f4f4; /* Blanco */
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #6a0e3a; /* Vino oscuro */
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #6a0e3a; /* Vino oscuro */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #6a0e3a; /* Vino oscuro */
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff; /* Blanco */
+    font-size: 16px;
+}
